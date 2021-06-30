@@ -933,7 +933,7 @@ pub fn getInputMode(window: ?*Window, mode: InputMode) c_int{
 
 extern fn glfwSetInputMode(window: ?*Window, mode: InputMode, value: c_int) void;
 pub fn setInputMode(window: ?*Window, mode: InputMode, value: c_int) void{
-    glfwSetInputMode(window, @enumToInt(mode), value);
+    glfwSetInputMode(window, mode, value);
     errorCheck2();
 }
 
